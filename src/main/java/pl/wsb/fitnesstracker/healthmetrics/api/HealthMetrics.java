@@ -13,12 +13,12 @@ public class HealthMetrics {
     @ManyToOne
     @JoinColumn(nullable = false)
     private User user;
-    @Column
+    @Column(nullable = false)
     private LocalDate date;
     @Column
     private Float weight;
     @Column
     private Long height;
-    @Column(nullable = false)
+    @Column
     private Long heartRate;
 }

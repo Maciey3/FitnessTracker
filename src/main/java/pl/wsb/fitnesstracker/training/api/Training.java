@@ -24,9 +24,10 @@ public class Training {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+    @Column(nullable = false)
     private Date startTime;
-    @Nullable
     private Date endTime;
+    @Column(nullable = false)
     private ActivityType activityType;
     private double distance;
     private double averageSpeed;
